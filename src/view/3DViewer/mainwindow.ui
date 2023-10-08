@@ -1,0 +1,1646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1358</width>
+    <height>1339</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1358</width>
+    <height>1339</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1358</width>
+    <height>1339</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="viewer" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1081</width>
+      <height>1001</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">body{
+  background-image:url(picture.gif);
+  background-color:#243CED;
+  color:yellow;
+}</string>
+    </property>
+    <widget class="QDial" name="dial_Line_Width">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>880</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>30</number>
+     </property>
+    </widget>
+    <widget class="QDial" name="dial_Point_Width">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>880</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>40</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="win_Vertex">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>930</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>.AppleSystemUIFont</family>
+       <pointsize>24</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgba(0, 0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="win_Facet">
+     <property name="geometry">
+      <rect>
+       <x>900</x>
+       <y>930</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>.AppleSystemUIFont</family>
+       <pointsize>24</pointsize>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+background-color: rgba(0, 0, 0, 0);
+</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="FilePath">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>1230</y>
+      <width>881</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 24pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 25px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OpenFile">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>10</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Open file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Draw">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>1220</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid green;
+ 	border-radius: 25px;
+	background-color:rgb(80,80,80);
+	margin: 0px
+}
+
+QPushButton:pressed {
+	background-color: green;
+	color: white;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>DRAW</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1119</x>
+      <y>110</y>
+      <width>231</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>ROTATE BY ANGLE:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>150</y>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>200</y>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>250</y>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>z</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>465</y>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>515</y>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>z</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>415</y>
+      <width>50</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Error_message">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>60</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Angle_Z">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>250</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="sliderScale">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>670</y>
+      <width>210</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+    <property name="sliderPosition">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_scale">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>630</y>
+      <width>231</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>RESIZE:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Angle_Y">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>200</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Angle_X">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>150</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Move_X">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>410</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Move_Y">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>460</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="Move_Z">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>510</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:20pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MOVE">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>570</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Move</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ROTATE">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>310</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Rotate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MOVE_BY_AXIS">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>370</y>
+      <width>231</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>MOVE BY AXIS:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RESIZE">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>750</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Resize</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Slider_Color_R">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>1080</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Slider_Color_G">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>1110</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Slider_Color_B">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>1140</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Background_B">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>1140</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Background_G">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>1110</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Background_R">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>1080</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OFF">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>1230</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid red;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	background-color:red;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>OFF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SAVE">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>840</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Picture</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Line_Box">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>1170</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>───────</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>⋯⋯⋯⋯⋯⋯⋯</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>─ ─ ─ ─ ─ ─</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>─ • ─ • ─ • ─ </string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>1040</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>Background</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>1040</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Lines&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Point_Box">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>1170</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;.AppleSystemUIFont&quot;;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>◉</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>█</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QSlider" name="Point_Color_G">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>1110</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Point_Color_B">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>1140</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="Point_Color_R">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>1080</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="sliderPosition">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>1040</y>
+      <width>181</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>Point</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GIF">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>920</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Start Gif</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SAVE_settings">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>1050</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Save settings</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Load_settings">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>1100</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Load settings</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scale_win">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>700</y>
+      <width>210</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="Random_Move">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>1040</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>Random move</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GIF_2">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>970</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>.AppleSystemUIFont</family>
+      <pointsize>20</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid black;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	color: black;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Save Gif</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="Ortho">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>1120</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ortho</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="Perspective">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>1150</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Perspective</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>1090</y>
+      <width>141</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	border: 2px solid rgb(80, 80, 80);
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Projection&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="random_Hide">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>1040</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="random_Show">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>1190</y>
+      <width>121</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+ 	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 0px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Clean">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>1210</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	font: 20pt &quot;.AppleSystemUIFont&quot;;
+	border: 2px solid green;
+ 	border-radius: 20px;
+	background-color:rgb(80,80,80);
+	margin: 0px;
+}
+
+QPushButton:pressed {
+	border: 2px solid black;
+	background-color:green;
+}
+
+QPushButton:hover:!pressed
+{
+  	border: 2px solid rgb(80, 80, 80);
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Clean</string>
+    </property>
+   </widget>
+   <zorder>Clean</zorder>
+   <zorder>Draw</zorder>
+   <zorder>Random_Move</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_scale</zorder>
+   <zorder>MOVE_BY_AXIS</zorder>
+   <zorder>label</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_9</zorder>
+   <zorder>Load_settings</zorder>
+   <zorder>widget</zorder>
+   <zorder>FilePath</zorder>
+   <zorder>OpenFile</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>Error_message</zorder>
+   <zorder>Angle_Z</zorder>
+   <zorder>sliderScale</zorder>
+   <zorder>Angle_Y</zorder>
+   <zorder>Angle_X</zorder>
+   <zorder>Move_X</zorder>
+   <zorder>Move_Y</zorder>
+   <zorder>Move_Z</zorder>
+   <zorder>MOVE</zorder>
+   <zorder>ROTATE</zorder>
+   <zorder>RESIZE</zorder>
+   <zorder>Slider_Color_R</zorder>
+   <zorder>Slider_Color_G</zorder>
+   <zorder>Slider_Color_B</zorder>
+   <zorder>Background_B</zorder>
+   <zorder>Background_G</zorder>
+   <zorder>Background_R</zorder>
+   <zorder>OFF</zorder>
+   <zorder>SAVE</zorder>
+   <zorder>Line_Box</zorder>
+   <zorder>Point_Box</zorder>
+   <zorder>Point_Color_G</zorder>
+   <zorder>Point_Color_B</zorder>
+   <zorder>Point_Color_R</zorder>
+   <zorder>GIF</zorder>
+   <zorder>SAVE_settings</zorder>
+   <zorder>scale_win</zorder>
+   <zorder>GIF_2</zorder>
+   <zorder>Ortho</zorder>
+   <zorder>Perspective</zorder>
+   <zorder>random_Hide</zorder>
+   <zorder>random_Show</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1358</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>viewer</class>
+   <extends>QWidget</extends>
+   <header location="global">viewer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
