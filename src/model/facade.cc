@@ -3,10 +3,10 @@
 
 class ICounter {
  public:
-  virtual int Сalculate(const char *NameOfFile) = 0;
+  virtual int Calculate(const char *NameOfFile) = 0;
 };
 
-int s21::CounterVertex::Сalculate(const char *NameOfFile) {
+int s21::CounterVertex::Calculate(const char *NameOfFile) {
   vertex_ = CountVertex(NameOfFile);
   return this->vertex_;
 }
@@ -34,7 +34,7 @@ int s21::CounterVertex::CountVertex(const char *NameOfFile) {
   return V_Fields;
 }
 
-int s21::CounterFacet::Сalculate(const char *NameOfFile) {
+int s21::CounterFacet::Calculate(const char *NameOfFile) {
   facet_ = CountFacet(NameOfFile);
   return this->facet_;
 }
@@ -66,13 +66,13 @@ int s21::CounterFacet::CountFacet(const char *NameOfFile) {
 
 int s21::Facade::GetVertex(const char *NameOfFile) {
   s21::CounterVertex obj_for_calcvertex_;
-  vertex_ = obj_for_calcvertex_.Сalculate(NameOfFile);
+  vertex_ = obj_for_calcvertex_.Calculate(NameOfFile);
   return this->vertex_;
 }
 
 int s21::Facade::GetFacet(const char *NameOfFile) {
   s21::CounterFacet obj_for_calcfacet_;
-  facet_ = obj_for_calcfacet_.Сalculate(NameOfFile);
+  facet_ = obj_for_calcfacet_.Calculate(NameOfFile);
   return facet_;
 }
 

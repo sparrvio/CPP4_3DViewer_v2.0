@@ -30,7 +30,7 @@ namespace s21 {
  */
 class ICounter {
  public:
-  virtual int Сalculate(const char *NameOfFile) = 0;
+  virtual int Calculate(const char *NameOfFile) = 0;
 };
 
 /**
@@ -38,7 +38,7 @@ class ICounter {
  */
 class CounterVertex : public ICounter {
  public:
-  int Сalculate(const char *NameOfFile) override;
+  int Calculate(const char *NameOfFile) override;
 
  private:
   int CountVertex(const char *NameOfFile);
@@ -50,7 +50,7 @@ class CounterVertex : public ICounter {
  */
 class CounterFacet : public ICounter {
  public:
-  int Сalculate(const char *NameOfFile) override;
+  int Calculate(const char *NameOfFile) override;
 
  private:
   int CountFacet(const char *NameOfFile);
